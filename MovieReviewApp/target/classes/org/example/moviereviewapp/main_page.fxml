@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.moviereviewapp.MovieReviewController" stylesheets="@styles.css">
+    <TextField fx:id="movieTitleField" layoutX="100" layoutY="50" promptText="Enter movie title"/>
+    <Button layoutX="100" layoutY="100" text="Search" onAction="#onSearchMovie"/>
+    <Label fx:id="resultLabel" layoutX="100" layoutY="150"/>
+    <Label fx:id="genreLabel" layoutX="100" layoutY="200"/>
+    <Label fx:id="directorLabel" layoutX="100" layoutY="250"/>
+    <Label fx:id="yearLabel" layoutX="100" layoutY="300"/>
+    <Label fx:id="ratingsLabel" layoutX="100" layoutY="350"/>
+    <Button fx:id="viewPosterButton" layoutX="100" layoutY="400" text="View Poster" onAction="#onViewPoster"/>
+    <ImageView fx:id="posterImageView" layoutX="100" layoutY="450" visible="false"/>
+</AnchorPane>
